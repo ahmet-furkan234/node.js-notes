@@ -11,14 +11,10 @@
             "id": "84ca789dbf01fe88",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "git test.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "git test"
+              "title": "Yeni sekme"
             }
           }
         ]
@@ -164,7 +160,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 334.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
