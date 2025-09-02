@@ -1,0 +1,109 @@
+/* Genel Tema Renk Deðiþkenleri (Mor-Siyah Palette) */
+:root {
+    /* Arka Plan Renkleri */
+    --background-primary: #1A1523; /* Ana arayüz arka planý (koyu morumsu siyah) */
+    --background-secondary: #221C2E; /* Sidebar, panel arka planlarý (biraz daha açýk) */
+    --background-tertiary: #2C263A; /* Aktif sekmeler, vurgulu alanlar */
+    --background-modifier-hover: rgba(177, 135, 226, 0.1); /* Hover efektleri */
+    --background-modifier-active: rgba(177, 135, 226, 0.2); /* Aktif/seçili durumlar */
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.4); /* Gölge rengi */
+    /* Metin Renkleri */
+    --text-normal: #E0D9F0; /* Genel metin rengi (açýk morumsu beyaz) */
+    --text-muted: #A79ECF; /* Soluk metin, ikonlar, tarihler (durgun mor) */
+    --text-accent: #B187E2; /* Vurgu metin (linkler, aktif öðeler - pastel mor) */
+    --text-accent-hover: #C59CEF; /* Vurgu metin hover (daha açýk mor) */
+    --text-highlight-bg: rgba(177, 135, 226, 0.3); /* Metin seçimi veya vurgu arka planý */
+    --text-selection: rgba(177, 135, 226, 0.2); /* Genel seçim rengi */
+    /* Sýnýr (Border) Renkleri */
+    --border-color: #3A2F4F; /* Çizgi, ayýrýcý, çerçeve renkleri (orta mor) */
+    --border-color-alt: #4E426D; /* Alternatif sýnýrlar */
+    /* Kontrol Elemanlarý (Slider, Toggle, Checkbox) */
+    --interactive-normal: #363046; /* Düðme, seçim kutusu normal durum */
+    --interactive-hover: #4E426D; /* Düðme, seçim kutusu hover durum */
+    --interactive-accent: #B187E2; /* Vurgu düðme, aktif toggle */
+    --interactive-accent-hover: #C59CEF; /* Vurgu düðme hover */
+    --interactive-success: #6CC76B; /* Baþarýlý (yeþil tonlarý) - mor temaya uyumlu tutmak için */
+    --interactive-warning: #FFC107; /* Uyarý (sarý tonlarý) - mor temaya uyumlu tutmak için */
+    --interactive-danger: #E27D60; /* Tehlike/Hata (kýrmýzý tonlarý) - mor temaya uyumlu tutmak için */
+    /* Kod Bloðu ve Syntax Renkleri (Bu kýsýmlar önceki ayarlardan alýnmýþtýr, birleþtirilebilir) */
+    --code-background: var(--background-secondary); /* Kod bloðu arka planý */
+    --code-normal: var(--text-normal); /* Kod metni */
+    /* Syntax Highlighting Renkleri (CodeMirror varsayýlanlarý üzerine) */
+    /* Bu deðiþkenler CSS snippet'inin en üstünde tanýmlanmýþ olsa da, CodeMirror özel sýnýflarý ile özelleþtirilebilir. */
+    /* Örnekler, önceki yanýtlarda '.cm-s-obsidian span.cm-keyword' gibi verilmiþti. */
+    /* Eðer bu deðiþkenler doðrudan Obsidian tarafýndan destekleniyorsa, onlar da kullanýlabilir. */
+}
+
+/* Genel Scrollbar (Kaydýrma Çubuðu) Stili */
+::-webkit-scrollbar-thumb {
+    background-color: var(--interactive-normal); /* Kaydýrma çubuðu rengi */
+    border-radius: 5px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--interactive-hover); /* Kaydýrma çubuðu hover rengi */
+    }
+
+/* Dosya Explorer ve Benzeri Listeler */
+.nav-file-title,
+.nav-folder-title {
+    color: var(--text-normal);
+}
+
+    .nav-file-title.is-active,
+    .nav-folder-title.is-active {
+        background-color: var(--background-tertiary); /* Aktif dosya/klasör arka planý */
+        color: var(--text-accent); /* Aktif dosya/klasör metin rengi */
+    }
+
+/* Sekme Baþlýklarý (Tab Headers) */
+.view-header {
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.view-header-title {
+    color: var(--text-normal);
+}
+
+.view-header-nav-item.is-active {
+    color: var(--text-accent);
+    border-bottom: 2px solid var(--text-accent);
+}
+
+/* Not Ýçindeki Baþlýklar (H1, H2 vb.) */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-accent); /* Baþlýklarý mor yap */
+}
+
+/* Linkler */
+a {
+    color: var(--text-accent);
+}
+
+/* Blockquote (Alýntý Bloklarý) */
+blockquote {
+    border-left: 4px solid var(--border-color);
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+}
+
+/* Checkbox (Yapýlacaklar Kutularý) */
+.task-list-item-checkbox {
+    background-color: var(--interactive-normal);
+    border: 1px solid var(--border-color);
+}
+
+    .task-list-item-checkbox.is-checked {
+        background-color: var(--interactive-accent);
+    }
+
+/* Genel Düðmeler */
+.mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+    .mod-cta:hover {
+        background-color: var(--interactive-accent-hover);
+    }

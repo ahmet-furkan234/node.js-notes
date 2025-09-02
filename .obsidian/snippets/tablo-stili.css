@@ -1,0 +1,61 @@
+/* Tablo Stili - Yatay Belirsiz Çizgiler */
+
+/* Genel Tablo Yapýsý */
+.markdown-source-view table,
+.markdown-preview-view table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1.5em 0 !important;
+    font-size: 0.9em !important;
+    border: none !important; /* Temanýn varsayýlan dýþ kenarlýðýný ve dikey kenarlýklarý sýfýrla */
+}
+
+    /* Tablo Baþlýklarý (<th>) */
+    .markdown-source-view table th,
+    .markdown-preview-view table th {
+        background-color: var(--background-secondary) !important; /* Baþlýk arka planý */
+        color: var(--text-accent) !important; /* Baþlýk metin rengi */
+        font-weight: bold !important;
+        padding: 8px 12px !important;
+        text-align: left !important;
+        border-bottom: 2px solid var(--border-color) !important; /* Belirgin alt kenarlýk */
+        border-top: none !important; /* Üst kenarlýðý kaldýr */
+        border-left: none !important; /* Sol kenarlýðý kaldýr (dikey çizgi olmasýn) */
+        border-right: none !important; /* Sað kenarlýðý kaldýr (dikey çizgi olmasýn) */
+    }
+
+    /* Tablo Hücreleri (<td>) */
+    .markdown-source-view table td,
+    .markdown-preview-view table td {
+        background-color: var(--background-primary) !important; /* Hücre arka planý */
+        color: var(--text-normal) !important; /* Hücre metin rengi */
+        padding: 8px 12px !important;
+        /* Satýr arasýna çok soluk yatay çizgi */
+        border-bottom: 1px solid var(--background-secondary) !important; /* Arka plana yakýn ince alt kenarlýk */
+        border-top: none !important; /* Üst kenarlýðý kaldýr */
+        border-left: none !important; /* Sol kenarlýðý kaldýr (dikey çizgi olmasýn) */
+        border-right: none !important; /* Sað kenarlýðý kaldýr (dikey çizgi olmasýn) */
+    }
+
+    /* Tüm kenarlýklarý kontrol eden genel kural (yedek olarak - artýk bu kodda çoðu kural üstteki daha spesifik kurallar tarafýndan geçersiz kýlýnacaktýr) */
+    /* .markdown-source-view table, */
+    /* .markdown-preview-view table th, */
+    /* .markdown-preview-view table td { */
+    /* border-color: var(--border-color) !important; */
+    /* } */
+
+    /* Eðer satýrlara farklý renk vermek isterseniz (örneðin zebra deseni) */
+    /* Bu kýsým aktif edilirse, yatay çizgiler daha da belirginleþebilir, deneyebilirsiniz. */
+    /* .markdown-preview-view table tr:nth-child(even) td {
+    background-color: var(--background-modifier-hover) !important;
+} */
+
+    /* Fare üzerine gelme efekti */
+    .markdown-preview-view table tr:hover td {
+        background-color: var(--background-modifier-hover) !important;
+    }
+
+    /* Tablonun en alt kenarlýðýný kaldýrmak için (isteðe baðlý, daha temiz bir bitiþ için) */
+    .markdown-preview-view table tr:last-child td {
+        border-bottom: none !important;
+    }
