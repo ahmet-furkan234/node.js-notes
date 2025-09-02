@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f0c8244d93182a5f",
+        "id": "d04289c471848314",
         "type": "tabs",
         "children": [
           {
-            "id": "3e5d83613625b7cd",
+            "id": "84ca789dbf01fe88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Jose Error handling Utils Code.md",
+                "file": "git test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jose Error handling Utils Code"
+              "title": "git test"
             }
           }
         ]
@@ -148,13 +148,23 @@
               "icon": "lucide-list",
               "title": "Anahat"
             }
+          },
+          {
+            "id": "d4a4849a2f7411ce",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,17 +176,19 @@
       "daily-notes:Bugünün Notunu Aç": false,
       "templates:Şablon ekle": false,
       "command-palette:Komut paletini aç": false,
-      "markdown-table-editor:Open Markdown Table Editor": false
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3e5d83613625b7cd",
+  "active": "84ca789dbf01fe88",
   "lastOpenFiles": [
+    "git test.md",
+    "Security/Jose Error handling Utils Code.md",
     "Security/Authentication System.md",
     "Security/Jose Errors.md",
     "Database/Mongoose/populate 2.md",
     "Database/Mongoose/populate.md",
     "Security/JWT.md",
-    "Security/Jose Error handling Utils Code.md",
     "Database/Mongoose/mongoose.model/methods.md",
     "Modüller/Class-Validator/Boolean ve Diğer Tipler.md",
     "Modüller/Fs/File System.md",
@@ -196,7 +208,6 @@
     "Modüller/Multer/upload.fields().md",
     "Modüller/Multer/upload.array().md",
     "Modüller/InversifyJS/inversify-express-utils.md",
-    "Modüller/InversifyJS/InversifyJS 2.md",
     "Modüller/Jose",
     "Modüller/bcrypt",
     "Modüller/InversifyJS",
