@@ -62,9 +62,7 @@ console.log(user.roleId.name);
 ```
 
 - Artık roleId sadece ObjectId değil, **Role dokümanı** oldu.
-    
 - Böylece aggregation + `$lookup` yazmana gerek kalmaz.
-    
 
 ---
 

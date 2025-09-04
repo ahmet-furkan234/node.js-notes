@@ -11,10 +11,14 @@
             "id": "84ca789dbf01fe88",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Database/Mongoose/mongoose.schema/schema.add().md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Yeni sekme"
+              "title": "schema.add()"
             }
           }
         ]
@@ -179,14 +183,19 @@
   },
   "active": "84ca789dbf01fe88",
   "lastOpenFiles": [
+    "Database/Mongoose/mongoose.schema/mongoose.Schema 2.md",
+    "Database/Mongoose/mongoose.schema/methods vs statics.md",
+    "Database/Mongoose/mongoose.schema/mongoose.Schema.md",
+    "Database/Mongoose/mongoose.model/methods 2.md",
+    "Database/Mongoose/mongoose.model/mongoose.model.md",
+    "Database/Mongoose/mongoose.model/methods.md",
+    "Database/Mongoose/populate 2.md",
+    "Database/Mongoose/populate.md",
     "git test.md",
     "Security/Jose Error handling Utils Code.md",
     "Security/Authentication System.md",
     "Security/Jose Errors.md",
-    "Database/Mongoose/populate 2.md",
-    "Database/Mongoose/populate.md",
     "Security/JWT.md",
-    "Database/Mongoose/mongoose.model/methods.md",
     "Modüller/Class-Validator/Boolean ve Diğer Tipler.md",
     "Modüller/Fs/File System.md",
     "Modüller/Fs/Method List.md",
@@ -200,11 +209,6 @@
     "Modüller/Multer/Multer settings.md",
     "Modüller/Multer/Multer.md",
     "Modüller/Multer/file.mimetype.md",
-    "Modüller/Multer/upload.single('file').md",
-    "Modüller/Multer/upload.none().md",
-    "Modüller/Multer/upload.fields().md",
-    "Modüller/Multer/upload.array().md",
-    "Modüller/InversifyJS/inversify-express-utils.md",
     "Modüller/Jose",
     "Modüller/bcrypt",
     "Modüller/InversifyJS",
