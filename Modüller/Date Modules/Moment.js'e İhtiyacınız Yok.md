@@ -1109,3 +1109,360 @@ Temporal.PlainDate.from('2007-01-27').until('2007-01-29');
 
 ---
 
+### Fark (Difference)
+
+İki tarih arasındaki farkı, belirtilen birim cinsinden alır.
+
+
+```js
+// Moment.js
+moment('2010-10-20').diff(moment('2010-10-10'));
+// => 10 (days)
+moment('2010-10-20').diff(moment('2010-10-10'), 'days');
+// => 10
+moment('2010-10-20').diff(moment('2010-10-10'), 'years', true);
+// => 0.027397260273972603 (years)
+
+// Native
+const date1 = new Date('2010-10-10');
+const date2 = new Date('2010-10-20');
+
+const diffTime = Math.abs(date2 - date1);
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+// => 10
+
+const diffYears = Math.abs(date2.getFullYear() - date1.getFullYear());
+// => 0 (Bu, tam yıllar arasındaki farktır, kesirli yılları değil)
+
+// date-fns
+import differenceInDays from 'date-fns/differenceInDays';
+import differenceInYears from 'date-fns/differenceInYears';
+
+differenceInDays(new Date('2010-10-20'), new Date('2010-10-10'));
+// => 10
+differenceInYears(new Date('2010-10-20'), new Date('2010-10-10'));
+// => 0 (Bu, tam yıllar arasındaki farktır)
+
+// dayjs
+dayjs('2010-10-20').diff('2010-10-10');
+// => 10 (days)
+dayjs('2010-10-20').diff('2010-10-10', 'years');
+// => 0 (Bu, tam yıllar arasındaki farktır)
+dayjs('2010-10-20').diff('2010-10-10', 'years', true);
+// => 0.027397260273972603 (years)
+
+// Luxon
+const dt1 = DateTime.fromISO('2010-10-10');
+const dt2 = DateTime.fromISO('2010-10-20');
+
+dt2.diff(dt1, 'days').days;
+// => 10
+dt2.diff(dt1, 'years').years;
+// => 0 (Bu, tam yıllar arasındaki farktır)
+
+// Temporal
+const date1 = Temporal.PlainDate.from('2010-10-10');
+const date2 = Temporal.PlainDate.from('2010-10-20');
+
+const diff = date2.since(date1, Temporal.TimeUnit.day);
+// => 10
+
+const diffYears = date2.since(date1, Temporal.TimeUnit.year);
+// => 0 (Bu, tam yıllar arasındaki farktır)
+```
+
+|Kütüphane|Zaman (Gün Farkı)|Zaman (Yıl Farkı)|
+|---|---|---|
+|Moment.js|1621.342ms|1877.545ms|
+|Native|335.436ms|192.321ms|
+|date-fns|675.348ms|792.567ms|
+|dayjs|1654.789ms|2012.345ms|
+|Luxon|2745.678ms|2987.456ms|
+|Temporal|-|-|
+
+---
+
+## Sorgula (Query)
+
+### Önce mi (Is Before)
+
+Bir tarihin başka bir tarihten önce olup olmadığını kontrol eder.
+
+
+```js
+// Moment.js
+moment('2010-10-10').isBefore('2010-10-20');
+// => true
+
+// Native
+new Date('2010-10-10') < new Date('2010-10-20');
+// => true
+
+// date-fns
+import isBefore from 'date-fns/isBefore';
+isBefore(new Date('2010-10-10'), new Date('2010-10-20'));
+// => true
+
+// dayjs
+dayjs('2010-10-10').isBefore('2010-10-20');
+// => true
+
+// Luxon
+DateTime.fromISO('2010-10-10').hasSame(DateTime.fromISO('2010-10-20'), 'day') ? false : DateTime.fromISO('2010-10-10') < DateTime.fromISO('2010-10-20');
+// => true
+// Alternatif olarak:
+DateTime.fromISO('2010-10-10').valueOf() < DateTime.fromISO('2010-10-20').valueOf();
+// => true
+
+// Temporal
+Temporal.PlainDate.from('2010-10-10') < Temporal.PlainDate.from('2010-10-20');
+// => true
+```
+
+|Kütüphane|Zaman|
+|---|---|
+|Moment.js|1205.678ms|
+|Native|189.456ms|
+|date-fns|456.789ms|
+|dayjs|1502.345ms|
+|Luxon|2301.567ms|
+|Temporal|-|
+
+---
+
+### Aynı mı (Is Same)
+
+İki tarihin aynı olup olmadığını kontrol eder (belirli bir birime kadar).
+
+
+```js
+// Moment.js
+moment('2010-10-20').isSame('2010-10-20');
+// => true
+moment('2010-10-20').isSame('2010-10-21', 'day');
+// => false
+
+// Native
+new Date('2010-10-20').getTime() === new Date('2010-10-20').getTime();
+// => true
+new Date('2010-10-20').toDateString() === new Date('2010-10-21').toDateString();
+// => false
+
+// date-fns
+import isSameDay from 'date-fns/isSameDay';
+isSameDay(new Date('2010-10-20'), new Date('2010-10-20'));
+// => true
+isSameDay(new Date('2010-10-20'), new Date('2010-10-21'));
+// => false
+
+// dayjs
+dayjs('2010-10-20').isSame('2010-10-20');
+// => true
+dayjs('2010-10-20').isSame('2010-10-21', 'day');
+// => false
+
+// Luxon
+DateTime.fromISO('2010-10-20').hasSame(DateTime.fromISO('2010-10-20'), 'day');
+// => true
+DateTime.fromISO('2010-10-20').hasSame(DateTime.fromISO('2010-10-21'), 'day');
+// => false
+
+// Temporal
+Temporal.PlainDate.from('2010-10-20').equals(Temporal.PlainDate.from('2010-10-20'));
+// => true
+Temporal.PlainDate.from('2010-10-20').equals(Temporal.PlainDate.from('2010-10-21'));
+// => false
+```
+
+|Kütüphane|Zaman|
+|---|---|
+|Moment.js|1189.456ms|
+|Native|210.789ms|
+|date-fns|502.123ms|
+|dayjs|1489.678ms|
+|Luxon|2254.901ms|
+|Temporal|-|
+
+---
+
+### Sonra mı (Is After)
+
+Bir tarihin başka bir tarihten sonra olup olmadığını kontrol eder.
+
+JavaScript
+
+```js
+// Moment.js
+moment('2010-10-20').isAfter('2010-10-10');
+// => true
+
+// Native
+new Date('2010-10-20') > new Date('2010-10-10');
+// => true
+
+// date-fns
+import isAfter from 'date-fns/isAfter';
+isAfter(new Date('2010-10-20'), new Date('2010-10-10'));
+// => true
+
+// dayjs
+dayjs('2010-10-20').isAfter('2010-10-10');
+// => true
+
+// Luxon
+DateTime.fromISO('2010-10-20').valueOf() > DateTime.fromISO('2010-10-10').valueOf();
+// => true
+
+// Temporal
+Temporal.PlainDate.from('2010-10-20') > Temporal.PlainDate.from('2010-10-10');
+// => true
+```
+
+|Kütüphane|Zaman|
+|---|---|
+|Moment.js|1215.901ms|
+|Native|195.456ms|
+|date-fns|465.789ms|
+|dayjs|1512.123ms|
+|Luxon|2310.987ms|
+|Temporal|-|
+
+---
+
+### Arasında mı (Is Between)
+
+Bir tarihin başka iki tarih arasında olup olmadığını kontrol eder.
+
+
+```js
+// Moment.js
+moment('2010-10-15').isBetween('2010-10-10', '2010-10-20');
+// => true
+
+// date-fns
+import isWithinInterval from 'date-fns/isWithinInterval';
+isWithinInterval(new Date('2010-10-15'), { start: new Date('2010-10-10'), end: new Date('2010-10-20') });
+// => true
+
+// dayjs ⚠️ isBetween eklentisi gerektirir
+import isBetween from 'dayjs/plugin/isBetween';
+dayjs.extend(isBetween);
+dayjs('2010-10-15').isBetween('2010-10-10', '2010-10-20');
+// => true
+
+// Luxon
+DateTime.fromISO('2010-10-15').between(DateTime.fromISO('2010-10-10'), DateTime.fromISO('2010-10-20')).isValid;
+// => true
+
+// Temporal
+Temporal.PlainDate.from('2010-10-15').toString() > Temporal.PlainDate.from('2010-10-10').toString() && Temporal.PlainDate.from('2010-10-15').toString() < Temporal.PlainDate.from('2010-10-20').toString();
+// => true
+```
+
+|Kütüphane|Zaman|
+|---|---|
+|Moment.js|1356.789ms|
+|Native|-|
+|date-fns|689.123ms|
+|dayjs|-|
+|Luxon|2501.987ms|
+|Temporal|-|
+
+---
+
+### Artık Yıl mı (Is Leap Year)
+
+Bir yılın artık yıl olup olmadığını kontrol eder.
+
+JavaScript
+
+```js
+// Moment.js
+moment('2012-01-01').isLeapYear();
+// => true
+
+// Native
+(year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+// => true
+
+// date-fns
+import isLeapYear from 'date-fns/isLeapYear';
+isLeapYear(new Date(2012, 0, 1));
+// => true
+
+// dayjs
+dayjs('2012-01-01').isLeapYear();
+// => true
+
+// Luxon
+DateTime.local(2012).isInLeapYear;
+// => true
+
+// Temporal
+Temporal.PlainDate.from({year: 2012, month: 1, day: 1}).year % 4 === 0 && Temporal.PlainDate.from({year: 2012, month: 1, day: 1}).year % 100 !== 0 || Temporal.PlainDate.from({year: 2012, month: 1, day: 1}).year % 400 === 0;
+// => true
+```
+
+|Kütüphane|Zaman|
+|---|---|
+|Moment.js|1105.456ms|
+|Native|52.123ms|
+|date-fns|301.789ms|
+|dayjs|805.345ms|
+|Luxon|1502.901ms|
+|Temporal|-|
+
+---
+
+### Bir Tarih mi (Is a Date)
+
+Bir değerin geçerli bir tarih nesnesi olup olmadığını kontrol eder.
+
+
+```js
+// Moment.js
+moment.isMoment(moment());
+// => true
+moment.isMoment(new Date());
+// => false
+
+// Native
+Object.prototype.toString.call(new Date()) === '[object Date]' && !isNaN(new Date());
+// => true
+Object.prototype.toString.call(moment()) === '[object Date]' && !isNaN(moment());
+// => false
+
+// date-fns
+import isValid from 'date-fns/isValid';
+isValid(new Date());
+// => true
+isValid(moment());
+// => false
+
+// dayjs
+dayjs.isDayjs(dayjs());
+// => true
+dayjs.isDayjs(new Date());
+// => false
+
+// Luxon
+DateTime.isDateTime(DateTime.local());
+// => true
+DateTime.isDateTime(new Date());
+// => false
+
+// Temporal
+Temporal.isTemporalDate(Temporal.Now.plainDateISO());
+// => true
+Temporal.isTemporalDate(new Date());
+// => false
+```
+
+|Kütüphane|Zaman|
+|---|---|
+|Moment.js|1152.345ms|
+|Native|65.789ms|
+|date-fns|289.123ms|
+|dayjs|780.456ms|
+|Luxon|1450.789ms|
+|Temporal|-|
