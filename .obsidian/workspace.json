@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modüller/Zod/Zod 7.md",
+                "file": "Modüller/Zod/Zod 0.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zod 7"
+              "title": "Zod 0"
             }
           }
         ]
@@ -183,14 +183,18 @@
   },
   "active": "84ca789dbf01fe88",
   "lastOpenFiles": [
-    "Modüller/Zod/Zod 6.md",
+    "Modüller/Zod/Zod 11.md",
+    "Modüller/Zod/Zod 9.md",
+    "Modüller/Zod/Zod 10.md",
+    "Modüller/Zod/Zod 8.md",
     "Modüller/Zod/Zod 7.md",
+    "Modüller/Zod/Zod 6.md",
     "Modüller/Zod/Zod 5.md",
     "Modüller/Zod/Zod 4.md",
     "Modüller/Zod/Zod 3.md",
     "Modüller/Zod/Zod 2.md",
     "Modüller/Zod/Zod 1.md",
-    "Modüller/Zod/Schema.md",
+    "Modüller/Zod/Zod 0.md",
     "().md",
     "npm.md",
     "Modüller/Zod",
@@ -206,10 +210,6 @@
     "git test.md",
     "Security/Jose Error handling Utils Code.md",
     "Security/Authentication System.md",
-    "Security/Jose Errors.md",
-    "Security/JWT.md",
-    "Modüller/Class-Validator/Boolean ve Diğer Tipler.md",
-    "Modüller/Fs/File System.md",
     "Modüller/Jose",
     "Modüller/bcrypt",
     "Modüller/InversifyJS",
