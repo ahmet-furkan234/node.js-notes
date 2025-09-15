@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Database/Mongoose/mongoose.schema/schema.add().md",
+                "file": "npm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "schema.add()"
+              "title": "npm"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "84ca789dbf01fe88",
   "lastOpenFiles": [
+    "Database/Mongoose/mongoose.schema/schema.add().md",
     "Database/Mongoose/mongoose.schema/mongoose.Schema 2.md",
     "Database/Mongoose/mongoose.schema/methods vs statics.md",
     "Database/Mongoose/mongoose.schema/mongoose.Schema.md",
@@ -208,7 +209,6 @@
     "Modüller/Printing Output/Chalk.md",
     "Modüller/Multer/Multer settings.md",
     "Modüller/Multer/Multer.md",
-    "Modüller/Multer/file.mimetype.md",
     "Modüller/Jose",
     "Modüller/bcrypt",
     "Modüller/InversifyJS",
