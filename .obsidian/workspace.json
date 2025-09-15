@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "npm.md",
+                "file": "Modüller/Zod/Zod 7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "npm"
+              "title": "Zod 7"
             }
           }
         ]
@@ -183,6 +183,17 @@
   },
   "active": "84ca789dbf01fe88",
   "lastOpenFiles": [
+    "Modüller/Zod/Zod 6.md",
+    "Modüller/Zod/Zod 7.md",
+    "Modüller/Zod/Zod 5.md",
+    "Modüller/Zod/Zod 4.md",
+    "Modüller/Zod/Zod 3.md",
+    "Modüller/Zod/Zod 2.md",
+    "Modüller/Zod/Zod 1.md",
+    "Modüller/Zod/Schema.md",
+    "().md",
+    "npm.md",
+    "Modüller/Zod",
     "Database/Mongoose/mongoose.schema/schema.add().md",
     "Database/Mongoose/mongoose.schema/mongoose.Schema 2.md",
     "Database/Mongoose/mongoose.schema/methods vs statics.md",
@@ -199,16 +210,6 @@
     "Security/JWT.md",
     "Modüller/Class-Validator/Boolean ve Diğer Tipler.md",
     "Modüller/Fs/File System.md",
-    "Modüller/Fs/Method List.md",
-    "Modüller/Fs/fs-extra.md",
-    "Modüller/Taking Input/inquirer/inquirer.md",
-    "Modüller/Chokidar/Chokidar.md",
-    "Modüller/Environment Variable/dotenv.md",
-    "Modüller/Başlıksız.md",
-    "Modüller/Class-Validator/Tarih ve Zaman.md",
-    "Modüller/Printing Output/Chalk.md",
-    "Modüller/Multer/Multer settings.md",
-    "Modüller/Multer/Multer.md",
     "Modüller/Jose",
     "Modüller/bcrypt",
     "Modüller/InversifyJS",
@@ -218,7 +219,6 @@
     "Database/Mongoose/mongoose.model",
     "Database/Mongoose/mongoose.schema",
     "Database/Mongoose",
-    "Modüller/Multer",
     "Diğer Detaylar/Modül Detay.canvas"
   ]
 }
