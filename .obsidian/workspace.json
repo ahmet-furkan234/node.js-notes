@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d04289c471848314",
+        "id": "3a3f056fe0559937",
         "type": "tabs",
         "children": [
           {
-            "id": "84ca789dbf01fe88",
+            "id": "d9c94aa7a08e72be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modüller/Date Modules/Date-fns/date-fns 4.md",
+                "file": "Modüller/Date Modules/Moment.js'e İhtiyacınız Yok.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "date-fns 4"
+              "title": "Moment.js'e İhtiyacınız Yok"
             }
           }
         ]
@@ -141,12 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Modüller/Date Modules/Moment.js'e İhtiyacınız Yok.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Anahat"
+              "title": "Moment.js'e İhtiyacınız Yok ana hatları"
             }
           },
           {
@@ -181,17 +182,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "84ca789dbf01fe88",
+  "active": "d9c94aa7a08e72be",
   "lastOpenFiles": [
+    "Modüller/Date Modules/Date-fns/date-fns 10.md",
+    "Modüller/Date Modules/Date-fns/date-fns 9.md",
     "Modüller/Date Modules/Date-fns/date-fns 5.md",
+    "Modüller/Date Modules/Date-fns/date-fns 6.md",
+    "Modüller/Date Modules/Date-fns/date-fns 7.md",
+    "Modüller/Date Modules/Date-fns/date-fns 8.md",
+    "Modüller/Date Modules/Date-fns/date-fns 0.md",
+    "Modüller/Zod/Zod 0.md",
+    "Modüller/Date Modules/Date-fns/date-fns 1.md",
+    "date-fns.md",
     "Modüller/Date Modules/Date-fns/date-fns 4.md",
     "Modüller/Date Modules/Date-fns/date-fns 3.md",
     "Modüller/Date Modules/Date-fns/date-fns 2.md",
-    "Modüller/Date Modules/Date-fns/date-fns 1.md",
     "Modüller/Date Modules/Moment.js'e İhtiyacınız Yok.md",
     "Database/Mongoose/mongoose.model/methods.md",
     "Modüller/Date Modules/Date-fns",
-    "Modüller/Zod/Zod 0.md",
     "Modüller/Date Modules",
     "Modüller/Zod/Zod 11.md",
     "Modüller/Zod/Zod 9.md",
@@ -204,14 +212,7 @@
     "Modüller/Zod/Zod 3.md",
     "Modüller/Zod/Zod 2.md",
     "Modüller/Zod/Zod 1.md",
-    "().md",
-    "npm.md",
     "Modüller/Zod",
-    "Database/Mongoose/mongoose.schema/schema.add().md",
-    "Database/Mongoose/mongoose.schema/mongoose.Schema 2.md",
-    "Database/Mongoose/mongoose.schema/methods vs statics.md",
-    "Database/Mongoose/mongoose.schema/mongoose.Schema.md",
-    "Database/Mongoose/mongoose.model/methods 2.md",
     "Modüller/Jose",
     "Modüller/bcrypt",
     "Modüller/InversifyJS",
