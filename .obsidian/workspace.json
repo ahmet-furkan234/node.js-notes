@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modüller/Date Modules/Date-fns/date-fns 6.md",
+                "file": "Modüller/Zod/Zod 5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "date-fns 6"
+              "title": "Zod 5"
             }
           }
         ]
@@ -184,8 +184,13 @@
   },
   "active": "d9c94aa7a08e72be",
   "lastOpenFiles": [
-    "Modüller/Date Modules/Date-fns/date-fns 7.md",
+    "Modüller/Zod/Zod 0.md",
+    "Modüller/Zod/Zod 3.md",
+    "Modüller/Zod/Zod 2.md",
+    "Modüller/Zod/Zod 1.md",
+    "Modüller/Zod/Zod 11.md",
     "Modüller/Date Modules/Date-fns/date-fns 6.md",
+    "Modüller/Date Modules/Date-fns/date-fns 7.md",
     "Modüller/Date Modules/Date-fns/date-fns 4.md",
     "Modüller/Date Modules/Date-fns/date-fns 5.md",
     "Modüller/Date Modules/Date-fns/date-fns 0.md",
@@ -193,7 +198,6 @@
     "Modüller/Date Modules/Date-fns/date-fns 10.md",
     "Modüller/Date Modules/Date-fns/date-fns 9.md",
     "Modüller/Date Modules/Date-fns/date-fns 8.md",
-    "Modüller/Zod/Zod 0.md",
     "Modüller/Date Modules/Date-fns/date-fns 1.md",
     "date-fns.md",
     "Modüller/Date Modules/Date-fns/date-fns 3.md",
@@ -201,7 +205,6 @@
     "Database/Mongoose/mongoose.model/methods.md",
     "Modüller/Date Modules/Date-fns",
     "Modüller/Date Modules",
-    "Modüller/Zod/Zod 11.md",
     "Modüller/Zod/Zod 9.md",
     "Modüller/Zod/Zod 10.md",
     "Modüller/Zod/Zod 8.md",
@@ -209,9 +212,6 @@
     "Modüller/Zod/Zod 6.md",
     "Modüller/Zod/Zod 5.md",
     "Modüller/Zod/Zod 4.md",
-    "Modüller/Zod/Zod 3.md",
-    "Modüller/Zod/Zod 2.md",
-    "Modüller/Zod/Zod 1.md",
     "Modüller/Zod",
     "Modüller/Jose",
     "Modüller/bcrypt",

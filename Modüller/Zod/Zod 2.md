@@ -33,9 +33,7 @@ console.log(nameSchema.parse(123));
 👉 `parse()` metodu, verilen veriyi kontrol eder.
 
 - Eğer doğruysa **aynı veriyi geri döner**
-    
 - Yanlışsa **hata fırlatır**
-    
 
 ---
 
@@ -56,9 +54,7 @@ console.log(badResult);
 👉 `safeParse` her zaman obje döner:
 
 - `{ success: true, data: ... }` → Doğru veri
-    
 - `{ success: false, error: ... }` → Hatalı veri
-    
 
 ---
 
@@ -83,13 +79,5 @@ console.log(userSchema.parse({ username: "TkMatE", age: "25" }));
 📌 Buraya kadar:
 
 - Zod kurulumunu yaptık ✅
-    
 - `parse` ve `safeParse` arasındaki farkı gördük ✅
-    
 - İlk basit `string` ve `object` örneklerini yaptık ✅
-    
-
----
-
-👉 Şimdi sırada **3. adım: Temel tipler (string, number, boolean, date, vs.)** var.  
-Devam edelim mi?
