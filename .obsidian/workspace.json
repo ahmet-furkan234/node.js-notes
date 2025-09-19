@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Dosya Gezgini"
+              "title": "Files"
             }
           },
           {
@@ -156,8 +156,8 @@
             "state": {
               "type": "git-history-view",
               "state": {},
-              "icon": "history",
-              "title": "History"
+              "icon": "lucide-ghost",
+              "title": "git-history-view"
             }
           }
         ],
@@ -170,14 +170,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
       "bases:Create new base": false,
-      "markdown-importer:Markdown yükleyicisini aç": false,
-      "switcher:Hızlı geçişi aç": false,
-      "graph:Grafik görünümünü aç": false,
-      "canvas:Yeni tuval oluşturun": false,
-      "daily-notes:Bugünün Notunu Aç": false,
-      "templates:Şablon ekle": false,
-      "command-palette:Komut paletini aç": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "obsidian-git:Open Git source control": false
     }
