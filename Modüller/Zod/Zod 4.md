@@ -110,17 +110,7 @@ person.parse({ name: "TkMatE" }); // ❌ Error (age eksik)
 📌 Özet:
 
 - Array ile listeler doğrulandı ✅
-    
 - Tuple ile sabit uzunluklu diziler ✅
-    
 - Enum ile belirli seçenekler ✅
-    
 - Literal ile tek değer ✅
-    
 - Union & Intersection ile tip birleşimleri ✅
-    
-
----
-
-👉 Şimdi sırada **5. adım: Object şemaları ve iç içe yapılar** var.  
-Devam edelim mi?

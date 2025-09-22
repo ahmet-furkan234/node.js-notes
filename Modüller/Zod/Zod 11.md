@@ -45,13 +45,9 @@ app.listen(3000, () => console.log("Server çalışıyor 🚀"));
 ## 2. Özellikler
 
 - `safeParse()` kullanarak **runtime hataları yakaladık**
-    
 - `refine()` ile **parola eşleşmesini kontrol ettik**
-    
 - `message` ve `path` ile **hata mesajlarını kullanıcıya bağladık**
-    
 - `result.data` → artık tip güvenli (`z.infer<typeof registerSchema>`) ✅
-    
 
 ---
 
@@ -99,16 +95,5 @@ orderSchema.parse(data); // ✅
 📌 Özet:
 
 - Zod ile **API request doğrulama** basit ve tip güvenli ✅
-    
 - Hatalar anlamlı mesajlarla dönüyor ✅
-    
 - Nested object, array, optional/default ve refine ile tüm gerçek hayat senaryoları kapsanıyor ✅
-    
-
----
-
-🎯 Böylece Zod konusunu **başlangıçtan ileri seviyeye kadar** tek parçada tamamlamış olduk.
-
-İstersek bir sonraki adımda sana **“Tam Kapsamlı Örnek Proje Şeması”** hazırlayıp, **tüm Zod özelliklerini bir arada** gösterebilirim.
-
-Bunu yapmamı ister misin?
