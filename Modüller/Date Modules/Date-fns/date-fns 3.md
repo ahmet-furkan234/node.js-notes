@@ -54,25 +54,15 @@ console.log({ now, twoHoursLater, oneHourAgo, tomorrow, yesterday, nextMonth, la
 ## 🔹 Detaylı Açıklama
 
 1. **Immutable**
-    
     - Orijinal `now` değişmez, her fonksiyon **yeni bir Date** döner.
-        
     - Bu, hataları önler ve chain kullanımına uygundur.
-        
 2. **Local Time Üzerinden Çalışır**
-    
     - Sistem saat dilimi (timezone) dikkate alınır.
-        
     - Örn: Türkiye’de GMT+3 → +2 saat eklediğinde local time otomatik hesaplanır.
-        
 3. **Kullanım Senaryoları**
-    
     - Rezervasyon: +2 saat sonrası, +1 gün sonrası gibi kurallar
-        
     - Deadline: Bugünden 3 gün sonra bitiş tarihi
-        
     - Planlama: Haftalık, aylık veya yıllık aktiviteler
-        
 
 ---
 
@@ -98,19 +88,9 @@ if (sessionDate <= minReservationTime) {
 💡 **İpucu:**
 
 - Tüm ekleme/çıkarma fonksiyonları **Date objesi alır** → doğrudan string veya timestamp de kullanılabilir.
-    
 - Chainleme yapılabilir:
-    
 
 ```ts
 import { addDays, addHours } from 'date-fns';
 const newDate = addHours(addDays(new Date(), 1), 2); // Bugüne 1 gün + 2 saat
 ```
-
----
-
-TkMatE, bu başlık tamam ✅
-
-Şimdi sırada **4️⃣ Tarihler Arası Fark Hesaplama (difference Functions)** konusuna geçebiliriz ve detaylı inceleyebiliriz.
-
-Bunu başlatalım mı?
