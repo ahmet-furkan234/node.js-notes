@@ -98,27 +98,8 @@ const backToLocal = utcToZonedTime(localDate, 'Europe/Istanbul');
 ## 10️⃣ Immutable & Tree-Shakeable
 
 - Date-fns fonksiyonları **immutable** → orijinal Date değişmez
-    
 - **Tree-shakeable** → sadece import edilen fonksiyon bundle’a eklenir
-    
 
 ```ts
 const newDate = addHours(now, 2);
-```
-
-```
-
----
-
-✅ Bu Markdown’u Obsidian’a yapıştırdığında:  
-
-- TOC kısmındaki linkler sayfa içi anchor linkleri gibi çalışır.  
-- Her başlığa tek tıkla hızlıca geçebilirsin.  
-- İstersen bu şemayı **obsidian panelinde pinleyip hızlı erişim menüsü** gibi kullanabilirsin.  
-
----
-
-TkMatE, istersen ben bunu biraz daha **daha kısa, tek sayfa “mini cheat sheet” tarzı** hâle getirip, bütün fonksiyonları bir tabloya da dökebilirim.  
-
-Bunu yapayım mı?
 ```
