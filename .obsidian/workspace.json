@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Npm Commands/npm prune.md",
+                "file": "Npm Compiler/Arrow Function Compling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "npm prune"
+              "title": "Arrow Function Compling"
             }
           }
         ],
@@ -197,11 +197,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c34e5b97977122e9",
+  "active": "985015d992e5dd4c",
   "lastOpenFiles": [
+    "Npm Commands/npm prune.md",
+    "Npm Compiler/Arrow Function Compling.md",
+    "Npm Compiler",
     "Npm Commands/npm ci.md",
     "Npm Commands/NPM Commands.md",
-    "Npm Commands/npm prune.md",
     "Npm Commands/CI&CD",
     "Modüller/Cron/Örnek kod.md",
     "Npm Commands",
@@ -233,7 +235,6 @@
     "Modüller/Zod",
     "Modüller/Jose",
     "Modüller/bcrypt",
-    "Modüller/InversifyJS",
     "Diğer Detaylar/Modül Detay.canvas"
   ]
 }
