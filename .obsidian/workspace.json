@@ -34,9 +34,37 @@
               "icon": "lucide-file",
               "title": "Arrow Function Compling"
             }
+          },
+          {
+            "id": "02d820af912e9cd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security/Authentication System.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Authentication System"
+            }
+          },
+          {
+            "id": "26e428d6744a4ce7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exception List.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exception List"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -197,10 +225,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "985015d992e5dd4c",
+  "active": "26e428d6744a4ce7",
   "lastOpenFiles": [
-    "Npm Commands/npm prune.md",
+    "Security/Authentication System.md",
+    "Exception List.md",
+    "Security/JWT.md",
+    "Security/Jose Errors.md",
+    "Error Stack Tree.md",
+    "Untitled",
     "Npm Compiler/Arrow Function Compling.md",
+    "Npm Commands/npm prune.md",
     "Npm Compiler",
     "Npm Commands/npm ci.md",
     "Npm Commands/NPM Commands.md",
@@ -225,16 +259,10 @@
     "Modüller/Zod/Zod 0.md",
     "Modül Türleri.md",
     "Modül.md",
-    "__filename ve __dirname.md",
-    "Modüller/Zod/Zod 8.md",
-    "Modüller/Zod/Zod 1.md",
-    "Modüller/Date Modules/Date-fns/date-fns 6.md",
-    "Modüller/Date Modules/Date-fns/date-fns 5.md",
     "Modüller/Date Modules/Date-fns",
     "Modüller/Date Modules",
     "Modüller/Zod",
     "Modüller/Jose",
-    "Modüller/bcrypt",
     "Diğer Detaylar/Modül Detay.canvas"
   ]
 }
